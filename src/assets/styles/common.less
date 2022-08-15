@@ -1,0 +1,309 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html,
+body {
+  font-size: 16px;
+  // overflow: hidden;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+[contenteditable]:focus {
+  outline: none;
+}
+
+// 全局公共样式 作用于全局
+body {
+  min-width: 1280px;
+  font-size: 12px;
+  color: #040c2c;
+  font-family: "microsoft yahei";
+  background-color: transparent;
+}
+body,
+button,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+li,
+ol,
+p,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+
+//滚动条
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  // background-color: @c-bg-3;
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(4, 12, 44, 0.25);
+  border-radius: 4px;
+  border: solid transparent;
+}
+::-webkit-scrollbar-track {
+  // background-color: @c-bg-3;
+  background-color: transparent;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//覆盖样式 公共样式
+.poros-tabs-nav-scroll {
+  height: 38px;
+}
+.poros-router-tabs__main {
+  padding: 0;
+}
+
+// 表格头部按钮和搜索框
+.c_searchArea {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  .c_right {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.w50 {
+  width: 50px;
+}
+
+.w60 {
+  width: 60px;
+}
+
+.mt3 {
+  margin-top: 3px;
+}
+
+.mt6 {
+  margin-top: 6px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.ml6 {
+  margin-left: 6px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml12 {
+  margin-left: 12px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fillall {
+  height: 100%;
+}
+
+.auto-y {
+  overflow-y: auto;
+}
+
+.hidden-x {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+
+  &.fillall {
+    .flex-fillall-box {
+      overflow: hidden;
+    }
+  }
+
+  &-h-end {
+    justify-content: flex-end;
+  }
+
+  &-h-space {
+    justify-content: space-between;
+  }
+
+  &-h-center {
+    justify-content: center;
+  }
+
+  &-v-center {
+    align-items: center;
+  }
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-fillall-box {
+    flex: 1;
+  }
+}
+
+.poros-router-tabs__main {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+.poros-sider-menu-collapsed-switch {
+  z-index: 100;
+}
