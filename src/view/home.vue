@@ -2,7 +2,9 @@
   <div class="home">
     <!-- TODO:toolbar -->
     <div class="main">
-      <div class="left"></div>
+      <div class="left">
+        <ComponentList />
+      </div>
       <div class="center">
         <div 
           class="content" 
@@ -33,6 +35,10 @@
         e.preventDefault()
         e.stopPropagation()
         const index = e.dataTransfer.getData('index')
+        // if(index) {
+          
+        // }
+        console.log(index);
       },
       // 进入目标区域触发dragover事件
       handleDragOver(e){
